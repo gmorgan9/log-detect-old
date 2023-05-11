@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
+import about from './about'; // Import the About component
 
 function App() {
   return (
@@ -7,31 +9,15 @@ function App() {
       <header>
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/login">Login</Link></li>
           </ul>
         </nav>
       </header>
       <main>
-        <h1>Welcome to my website</h1>
-        <section>
-          <h2>Login</h2>
-          <form>
-            <label>
-              Username:
-              <input type="text" />
-            </label>
-            <br />
-            <label>
-              Password:
-              <input type="password" />
-            </label>
-            <br />
-            <button type="submit">Login</button>
-          </form>
-        </section>
+        {/* Your other content */}
       </main>
     </div>
   );
